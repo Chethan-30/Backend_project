@@ -1,0 +1,86 @@
+
+  /* Style page content */
+  .main {
+    margin-left: 10px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* body {
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+   } */
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+
+  .btn {
+    border: none;
+    background-color:#1df01d; ;
+    padding: 10px 25px;
+    font-size: 80px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  /* On mouse-over */
+  .btn:hover {background: rgb(245, 68, 10);}
+
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main
+  {
+    /* background-image:  url('PHOTU5.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover;
+    background: fixed; */
+    background-color: lightgreen;
+  }
+  .sec1
+  {
+    font-size: 20px;
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .column1 {
+    width: 150%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .column2 {
+    width: 120%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+
+  .card {
+    width: 30%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 70px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .card:hover {
+    background-position: 0 100%;
+  }
+  .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #2c7bfe;
+  }
+  .card:hover h3 {
+    color: #ffffff;
+  }
+  .card:hover p {
+    color: #f0f0f0;
+  }
+  

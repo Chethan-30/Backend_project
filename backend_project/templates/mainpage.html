@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href={{ url_for('static',filename='../static/stylemain.css') }}>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Mainpage</title>
+</head>
+<body>
+    
+    <div>
+        <p id="hello1">DISEASE WIKI</p>
+    </div>  
+    
+    <!-- form for getting the input from the user for the type of search he wants to perform -->
+    <main>
+      <div id="searchtxt">
+        Select the type of searching you want to do on our database</div>
+      
+        <form method="POST" name="form1" action="{{ url_for('rtv') }}">
+        <div id="mysearch">
+          <select id="comp" name="input33">
+            <option value="q0">Query 1</option>
+            <option value="q1">Query 2</option>
+            <option value="q2">Query 3</option>
+            <option value="q3">Query 4</option>
+            <option value="q4">Query 5</option>
+            <option value="q5">Query 6</option>
+            <option value="q6">Query 7</option>
+            <option value="q7">Query 8</option>
+            <option value="q8">Query 9</option>
+            <option value="q9">Query 10</option>
+            <option value="q10">Query 11</option>
+            <option value="q11">Query 12</option>
+            <option value="q12">Query 13</option>
+            <option value="q13">Query 14</option>
+            <option value="q14">Query 15</option>
+            <option value="q15">Query 16</option>
+            <option value="q16">Query 17</option>
+            <option value="q17">Query 18</option>
+            <option value="q18">Query 19</option>
+            <option value="q19">Query 20</option>
+            <option value="q20">Query 21</option>
+            <option value="q21">Query 22</option>
+            <option value="q22">Query 23</option>
+            <option value="q23">Query 24</option>
+            <option value="q24">Query 25</option>
+            <option value="q25">Query 26</option>
+            <option value="q26">Query 27</option>
+            <option value="q27">Query 28</option>
+          </select>
+        </div>        
+         <div id="submitbtn">
+          <input type="submit" value="Submit" /> 
+          </div>
+      </form>
+    </main>
+     <!-- $$$$$$$$$$$$$$$$$$$$ -->
+    
+     <div class="topnav">
+    <form id="form2" method="POST">
+      <input type="text" id="searchbar" name="search2" placeholder="Search according to the selected option above">
+      <button id="searchbtn" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    </div>
+</body>
+</html>

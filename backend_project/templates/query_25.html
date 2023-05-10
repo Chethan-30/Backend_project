@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>symp_to_diseases</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href={{url_for('static',filename='../static/style_24.css') }} />
+  </head>
+  <body>
+    <section id="body1">
+      <div class="heading">
+        <h1 class="section-heading">Disease predictor</h1>
+      </div>
+      
+      <div id="searchtxt">
+        Choose the possible symptoms from our database so that we can predict the possible diseases according to our database</div>
+      
+        <form method="POST" id="ff" name="form1" action="{{ url_for('get_25_input') }}">
+        <div id="mysearch">
+          <select id="comp" class="options" name="input1">
+            <option value="none" >none</option>
+            {% for i in range(0,length) %}
+            <option value= '{{result[i]}}' >{{result[i]}}</option>
+            {% endfor %}  
+          </select>
+
+          <select id="comp" name="input2">
+            <option value="none" >none</option>
+            {% for i in range(0,length) %}
+            <option value='{{result[i]}}' >{{result[i]}}</option>
+            {% endfor %} 
+          </select>
+
+          <select id="comp" class="options" name="input3">
+            <option value="none" >none</option>
+            {% for i in range(0,length) %}
+            <option value= '{{result[i]}}' >{{result[i]}}</option>
+            {% endfor %} 
+          </select>
+
+          <select id="comp"  class="options" name="input4">
+            <option value="none" >none</option>
+            {% for i in range(0,length) %}
+            <option value='{{result[i]}}' >{{result[i]}}</option>
+            {% endfor %} 
+          </select>
+
+          <select id="comp" class="options" name="input5">
+            <option value="none" >none</option>
+            {% for i in range(0,length) %}
+            <option value='{{result[i]}}' >{{result[i]}}</option>
+            {% endfor %} 
+          </select>
+
+          <select id="comp" class="options" name="input6">
+            <option value="none" >none</option>
+            {% for i in range(0,length) %}
+            <option value='{{result[i]}}' >{{result[i]}}</option>
+            {% endfor %} 
+          </select>
+        
+        </div>        
+         <div id="submitbtn">
+          <input type="submit" value="Submit" /> 
+          </div>
+      </form>
+        
+
+       
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insertion form</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<style>
+html, body {
+min-height: 100%;
+background-color: lightgreen;
+}
+
+
+#mainheading
+{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .column {
+    width: 500%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .column1 {
+    width: 65%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+h1 {
+margin: 0;
+font-weight: 400;
+}
+h3 {
+margin: 12px 0;
+color: #8ebf42;
+}
+.main-block {
+display: flex;
+justify-content: center;
+align-items: center;
+background: #fff;
+text-align: center;
+}
+/* form {
+width: 100%;
+padding: 20px;
+} */
+fieldset {
+border: none;
+border-top: 1px solid #8ebf42;
+}
+
+label {
+padding: 0 5px;
+text-align: right;
+vertical-align: middle;
+}
+input {
+padding: 5px;
+vertical-align: middle;
+}
+
+select, .children, .gender, .bdate-block {
+width: calc(100% + 26px);
+padding: 5px 0;
+}
+select {
+background: transparent;
+}
+ 
+
+
+button {
+width: 30%;
+padding: 10px 10px;
+border-radius: 5px; 
+border: none;
+background: #8ebf42; 
+font-size: 14px;
+font-weight: 600;
+color: #fff;
+align-items: center;
+margin-left: 50%;
+}
+button:hover {
+background: #82b534;
+}
+@media (min-width: 568px) {
+.account-details >div, .personal-details >div {
+width: 50%;
+}
+label {
+width: 40%;
+}
+input {
+width: 60%;
+}
+select, .children, .gender, .bdate-block {
+width: calc(60% + 16px);
+}
+}
+</style>
+</head>
+<body>
+
+<form action="{{url_for('insert_data')}}" method="POST">
+<h1 id="mainheading">Insert the details of disease into the database </details> </h1>
+<div class="row">
+<div class="column">  
+
+<div><label>Disease name</label></div></div></div>
+<div class="row">
+  <div class="column">  
+  <input type="text" name="in1" required></div></div></div>
+<br>
+<div class="row">
+  <div class="column">  
+<div><label>Born Country</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in2" required></div></div></div>
+<br>
+<div class="row">
+  <div class="column">  
+<div><label>Born Year</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in3" required></div></div></div>
+<br>
+<div class="row">
+  <div class="column">  
+<div><label>Mortality rate</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in4" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>Treatment name</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in5" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>Treatment type </label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in6" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>Treatment description</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in7" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>Prevention description</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in8" required></div></div></div>
+<br>
+
+
+<div class="row">
+  <div class="column">  
+<div><label>Medicine name</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in9" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>Medicine prescription</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in10" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>Medicine side effects</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in11" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label> Identification test name</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in12" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>Identification test description</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in13" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>symptom name</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in14" required></div></div></div>
+<br>
+
+
+<div class="row">
+  <div class="column">  
+<div><label>Vaccines name</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in15" required></div></div></div>
+<br>
+
+
+<div class="row">
+  <div class="column">  
+<div><label>Transmission modes name</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in16" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>Transmission modes description</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in17" required></div></div></div>
+<br>
+
+<div class="row">
+  <div class="column">  
+<div><label>Medicine Dosage</label></div></div></div>
+<div class="row">
+  <div class="column">  <input type="text" name="in18" required></div></div></div>
+<br>
+
+
+<div class="row">
+  <div class="column1">   
+<button type="submit" href="/">Submit</button></div>
+
+</div>
+</div>
+</form>
+
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treatment_details</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href={{url_for('static',filename='../static/style.css') }} />
+  </head>
+  <body>
+    <section>
+      <div class="row">
+        <h1 class="section-heading">{{ result[0] }}</h1>
+      </div>
+      
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3>Treatment name</h3>
+            <p>
+              {{ result[0] }}
+            </p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <h3>Treatment type</h3>
+            <p>
+              {{ result[1] }}
+            </p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <h3>Treatment description</h3>
+            <p>
+              {{ result[2] }}
+            </p>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+  </body>
+</html>
